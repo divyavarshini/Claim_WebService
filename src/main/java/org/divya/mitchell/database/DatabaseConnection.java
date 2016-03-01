@@ -8,7 +8,7 @@ public class DatabaseConnection {
 	static final String URL = "jdbc:mysql://localhost:3306/mitchellclaim";
 	
 	static final String USER = "root";
-	static final String PSWD = "Gulabo@123";
+	static final String PSWD = "123456";
 	
 	
 	public Connection getConnection() {
