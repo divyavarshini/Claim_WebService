@@ -57,7 +57,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "vehicles"
 })
 
-@XmlRootElement
+//@XmlRootElement
 public class MitchellClaimType {
     @XmlElement(name = "ClaimNumber", required = true)
     protected String claimNumber;

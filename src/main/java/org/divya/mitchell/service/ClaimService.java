@@ -430,9 +430,10 @@ public class ClaimService {
 		}
 		else{
 			List<VehicleInfoType> vehicleList = oldClaim.getVehicles().getVehicleDetails();
+			List<VehicleInfoType> newVehicleList = claim.getVehicles().getVehicleDetails();
 			VehicleListType list = new VehicleListType();
 			int i = 0;
-			for(VehicleInfoType vehicle: vehicleList){
+			for(VehicleInfoType vehicle: newVehicleList){
 				
 				if(vehicle.getDamageDescription()== null){
 					vehicle.setDamageDescription(vehicleList.get(i).getDamageDescription());
@@ -474,9 +475,6 @@ public class ClaimService {
 					vehicle.setModelYear(vehicleList.get(i).getModelYear());
 				}
 				
-				if(vehicle.getVin() == null){
-					vehicle.setVin(vehicleList.get(i).getVin());
-				}
 				i++;
 				list.getVehicleDetails().add(vehicle);
 			}

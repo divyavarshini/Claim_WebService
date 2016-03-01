@@ -22,4 +22,6 @@ public class GetServiceTest {
 		MitchellClaimType claim = service.getClaim("22c9c23bac142856018ce14a26b6c299");
 		assertEquals(claimTest.getClaimNumber(), claim.getClaimNumber());
 	}
+	
+	
 }
