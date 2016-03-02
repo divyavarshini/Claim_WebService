@@ -60,7 +60,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "damageDescription",
     "mileage"
 })
-//@XmlRootElement
+@XmlRootElement
 public class VehicleInfoType {
 
     @XmlElement(name = "ModelYear")

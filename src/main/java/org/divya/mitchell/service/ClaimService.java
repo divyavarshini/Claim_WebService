@@ -171,7 +171,7 @@ public class ClaimService {
 				vehicle.setLicPlate(rs.getString("LicPlate"));
 				vehicle.setLicPlateState(rs.getString("LicPlateState"));
 				
-				DateFormat df1=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+				DateFormat df1=new SimpleDateFormat("yyyy-MM-dd-hh:mm");
 				String licDate =  rs.getString("LicPlateExpDate");
 				
 				licDate = licDate.replace('T', ' ');

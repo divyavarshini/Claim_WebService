@@ -41,7 +41,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "VehicleListType", propOrder = {
     "vehicleDetails"
 })
-//@XmlRootElement
+@XmlRootElement
 public class VehicleListType {
 
     @XmlElement(name = "VehicleDetails", required = true)
